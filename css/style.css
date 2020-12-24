@@ -1,0 +1,106 @@
+/* 
+	Couleur de fond sur ma barre 
+ 	de navigation -- balise nav
+ */
+nav {
+	background: red;
+	text-align: center;
+}
+
+/* Alignement tous mes li sur la même ligne */
+nav ul li{
+	display: inline-block;
+
+	padding: 10px;
+}
+
+/* Mettre mes liens en majuscule en couleur blanche*/
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+/* Faire un effect au survol de la souris avec le hover */
+
+nav ul li a:hover{
+	background: white;
+	color: red;
+
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	background: #38A7D1;
+	padding: 40px;
+}
+
+.container .titres, .container .listes, #table,
+#position{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+table{
+	border-collapse: collapse;
+}
+th{
+	background-color: purple;
+}
+th,td {
+	border:1px solid;
+}
+
+.static {
+	position: static;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+
+	background-color: green;
+}
+
+.relative{
+	position: relative;
+	top: 0;
+	right: 0;
+	background-color: yellow;
+	
+}
+
+.absolue{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: gray;
+}
+
+section {
+	border: 1px solid red;
+	width: 60%;
+	margin: 150px 300px;
+	height: 250px;
+}
+
+#tag{
+	position: sticky;
+	top: 0;
+
+	font-size: 4em;
+	font-weight: bold;
+	color: #ffffff;
+
+	transition-property: padding-left, transform;
+
+	transition-duration: 5s;
+}
+
+#tag:hover{
+	transform: rotate(10deg);
+	padding-left: 200px;
+}
